@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+.button {
+  color: $white;
+  background-color: $black;
+  padding: 10px 55px;
+  border: $black;
+}
+.button:hover {
+  background-color: $orange_bistre;
+}
+@media screen and (min-width: $breakpoint-md) {
+  .button {
+    padding: 15px 50px;
+  }
+}
+@media screen and (min-width: $breakpoint-lg) {
+  .button {
+    padding: 15px 60px;
+  }
+}
