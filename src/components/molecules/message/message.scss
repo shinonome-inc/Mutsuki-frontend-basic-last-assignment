@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+h2 {
+  font-family: $fontfamily-mincho;
+  color: $black;
+  font-size: $fontsize-M;
+}
+p {
+  font-family: $fontfamily-gothic;
+  color: $black;
+  font-size: $fontsize-XS;
+}
+
+@media (min-width: $breakpoint-lg) {
+  h2 {
+    font-size: $fontsize-XXL;
+  }
+  p {
+    font-size: $fontsize-L;
+  }
+}
