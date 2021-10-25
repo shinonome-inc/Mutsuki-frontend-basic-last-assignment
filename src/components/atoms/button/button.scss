@@ -1,28 +1,35 @@
 @use "../../variables" as *;
 
-.button {
-  transition: 0.2s ease;
-  color: $white;
-  background-color: $black;
+.link-button {
   width: 180px;
-  height: 45px;
-  &:hover {
-    background-color: $orange_bistre;
+  .button {
+    transition: 0.2s ease;
+    color: $white;
+    background-color: $black;
+    width: 180px;
+    height: 45px;
+    display: block;
+
+    &:hover {
+      background-color: $orange_bistre;
+    }
   }
-}
-.a {
-  display: block;
 }
 
 @media screen and (min-width: $breakpoint-md) {
-  .button {
+  .link-button {
     width: 150px;
-    height: 55px;
+    .button {
+      width: 150px;
+      height: 55px;
+    }
   }
 }
 @media screen and (min-width: $breakpoint-lg) {
-  .button {
+  .link-button {
     width: 200px;
-    height: 55px;
+    .button {
+      width: 200px;
+    }
   }
 }
