@@ -14,9 +14,10 @@
     color: $black;
     font-size: $fontsize-S;
     line-height: 28px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
+
 @media (min-width: $breakpoint-lg) {
   .message {
     h2 {
