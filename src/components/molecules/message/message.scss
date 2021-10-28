@@ -1,9 +1,10 @@
 @use "../../variables" as *;
 .message {
+  display: flex;
+  flex-flow: column;
   h2 {
     text-align: center;
     font-family: $fontfamily-mincho;
-    color: $black;
     font-size: $fontsize-L;
     line-height: 30px;
     margin-bottom: 6px;
@@ -11,7 +12,6 @@
   p {
     text-align: center;
     font-family: $fontfamily-gothic;
-    color: $black;
     font-size: $fontsize-S;
     line-height: 28px;
     margin-bottom: 0;
