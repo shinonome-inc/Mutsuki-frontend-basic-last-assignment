@@ -11,8 +11,9 @@
     display: block;
     text-decoration: none;
     text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+    .button-text {
+      line-height: 45px;
+    }
     &:hover {
       background-color: $orange_bistre;
     }
@@ -25,6 +26,9 @@
     .button {
       width: 150px;
       height: 55px;
+      .button-text {
+        line-height: 55px;
+      }
     }
   }
 }
