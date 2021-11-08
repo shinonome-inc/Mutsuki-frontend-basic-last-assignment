@@ -5,6 +5,7 @@ a.button {
   width: 180px;
   text-decoration: none;
   display: inline-block;
+
   .button-text {
     color: $white;
     transition: 0.2s ease;
@@ -25,6 +26,7 @@ a.button {
   a.button {
     width: 150px;
     height: 55px;
+
     .button-text {
       width: 150px;
       height: 55px;
@@ -35,6 +37,7 @@ a.button {
 @media screen and (min-width: $breakpoint-lg) {
   a.button {
     width: 200px;
+
     .button-text {
       width: 200px;
     }
