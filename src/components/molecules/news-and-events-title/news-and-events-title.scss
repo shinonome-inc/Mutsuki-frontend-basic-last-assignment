@@ -1,9 +1,40 @@
 @use "../../variables" as *;
 
-h1 {
-  font-family: $fontfamily-mincho;
+.title {
+  padding: 0 0 32px 0;
+  display: inline-block;
+
+  .news {
+    float: left;
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-L;
+    width: 53px;
+    height: 29px;
+    margin: 0;
+  }
+
+  .info {
+    float: left;
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-M;
+    width: 64px;
+    height: 23px;
+    margin: 0 0 0 16px;
+    position: relative;
+    top: 3px;
+  }
 }
 
-.info {
-  font-family: $fontfamily-gothic;
+@media (min-width: $breakpoint-lg) {
+  .title {
+    .news {
+      font-size: $fontsize-XXL;
+      width: 105px;
+      height: 57px;
+    }
+
+    .info {
+      top: 17px;
+    }
+  }
 }
