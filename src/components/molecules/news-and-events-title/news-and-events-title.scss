@@ -1,32 +1,37 @@
 @use "../../variables" as *;
 
 .title {
-  padding: 0 0 32px;
+  width: 133px;
+  height: 61px;
   display: inline-block;
+  position: relative;
 
   .news {
-    float: left;
     font-family: $fontfamily-mincho;
     font-size: $fontsize-L;
     width: 53px;
     height: 29px;
     margin: 0;
+    position: absolute;
   }
 
   .info {
-    float: left;
     font-family: $fontfamily-gothic;
     font-size: $fontsize-M;
     width: 64px;
     height: 23px;
     margin: 0 0 0 16px;
-    position: relative;
+    position: absolute;
     top: 3px;
+    left: 53px;
   }
 }
 
 @media (min-width: $breakpoint-lg) {
   .title {
+    width: 185px;
+    height: 89px;
+
     .news {
       font-size: $fontsize-XXL;
       width: 105px;
@@ -35,6 +40,7 @@
 
     .info {
       top: 17px;
+      left: 105px;
     }
   }
 }
