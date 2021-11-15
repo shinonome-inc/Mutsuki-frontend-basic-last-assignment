@@ -10,8 +10,6 @@ a.button {
     color: $white;
     transition: 0.2s ease;
     background-color: $black;
-    width: 180px;
-    height: 45px;
     display: block;
     text-align: center;
     line-height: 45px;
@@ -20,26 +18,17 @@ a.button {
       background-color: $orange_bistre;
     }
   }
-}
 
-@media screen and (min-width: $breakpoint-md) {
-  a.button {
+  @media screen and (min-width: $breakpoint-md) {
     width: 150px;
     height: 55px;
 
     .button-text {
-      width: 150px;
-      height: 55px;
       line-height: 55px;
     }
   }
-}
-@media screen and (min-width: $breakpoint-lg) {
-  a.button {
-    width: 200px;
 
-    .button-text {
-      width: 200px;
-    }
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 200px;
   }
 }
