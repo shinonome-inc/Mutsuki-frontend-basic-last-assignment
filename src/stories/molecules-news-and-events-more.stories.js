@@ -1,5 +1,5 @@
-import Molecules_NewsAndEventsMore from "../components/molecules/message/news-and-events-more.html";
-import "../components/molecules/message/news-and-events-more.scss";
+import Molecules_NewsAndEventsMore from "../components/molecules/news-and-events-more/news-and-events-more.html";
+import "../components/molecules/news-and-events-more/news-and-events-more.scss";
 
 export default { title: "Molecules/NewsAndEventsMore" }
 

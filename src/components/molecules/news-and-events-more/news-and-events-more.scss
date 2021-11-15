@@ -1,0 +1,31 @@
+@use "../../variables" as *;
+
+.titlemore {
+  width: 112px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+
+  .infomore {
+    position: absolute;
+    font-size: $fontsize-S;
+    font-family: $fontfamily-gothic;
+    margin: 0;
+    width: 84px;
+    height: 20px;
+  }
+
+  .frame-right {
+    position: absolute;
+    margin: 0 0 0 16px;
+    width: 14px;
+    height: 14px;
+    left: 84px;
+    top: 3px;
+  }
+
+  &:hover {
+    color: $gray_nobel;
+    transition: ease 0.2s;
+  }
+}
