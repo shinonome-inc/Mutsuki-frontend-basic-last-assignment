@@ -1,46 +1,28 @@
 @use "../../variables" as *;
 
 .title {
-  width: 133px;
-  height: 61px;
-  display: inline-block;
-  position: relative;
+  display: flex;
+  align-items: center;
 
   .news {
     font-family: $fontfamily-mincho;
     font-size: $fontsize-L;
-    width: 53px;
-    height: 29px;
     margin: 0;
-    position: absolute;
   }
 
   .info {
     font-family: $fontfamily-gothic;
     font-size: $fontsize-M;
-    width: 64px;
+    margin-left: 16px;
+    margin-bottom: 0;
     height: 23px;
-    margin: 0 0 0 16px;
-    position: absolute;
-    top: 3px;
-    left: 53px;
   }
 }
 
 @media (min-width: $breakpoint-lg) {
   .title {
-    width: 185px;
-    height: 89px;
-
     .news {
       font-size: $fontsize-XXL;
-      width: 105px;
-      height: 57px;
-    }
-
-    .info {
-      top: 17px;
-      left: 105px;
     }
   }
 }
