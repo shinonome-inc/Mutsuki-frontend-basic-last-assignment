@@ -1,8 +1,7 @@
 @use "../../variables" as *;
 
-.title {
+.news-and-events-title {
   display: flex;
-  align-items: center;
 
   .news {
     font-family: $fontfamily-mincho;
@@ -15,14 +14,17 @@
     font-size: $fontsize-M;
     margin-left: 16px;
     margin-bottom: 0;
-    height: 23px;
+    line-height: 29px;
   }
 }
 
 @media (min-width: $breakpoint-lg) {
-  .title {
+  .news-and-events-title {
     .news {
       font-size: $fontsize-XXL;
+    }
+    .info {
+      line-height: 57px;
     }
   }
 }
