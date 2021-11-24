@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 
 .titlemore {
-  height: 20px auto;
+  height: 20px;
   display: flex;
 
   .infomore {
@@ -14,6 +14,7 @@
 
   i {
     margin-left: 16px;
+    line-height: 20px;
   }
 
   &:hover {
