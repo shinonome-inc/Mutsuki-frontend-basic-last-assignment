@@ -7,16 +7,16 @@
   .infomore {
     font-size: $fontsize-S;
     font-family: $fontfamily-gothic;
-    color: $black;
+    color: inherit;
     text-decoration: none;
     margin: 0;
   }
 
   i {
+    left: 5px;
     margin-left: 16px;
     line-height: 20px;
   }
-
   &:hover {
     color: $gray_nobel;
     transition: ease 0.2s;
