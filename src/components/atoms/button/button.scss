@@ -4,12 +4,13 @@ a.button {
   height: 45px;
   width: 180px;
   background-color: $black;
+  padding: 0 16px;
   transition: ease 0.2s;
   align-items: center;
   justify-content: center;
   display: flex;
 
-  .button-text {
+  span {
     font-size: $fontsize-S;
     color: $white;
   }
