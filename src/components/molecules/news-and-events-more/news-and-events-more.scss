@@ -1,26 +1,24 @@
 @use "../../variables" as *;
 
-.titlemore {
-  width: 112px;
-  height: 20px;
-  display: flex;
-
-  .infomore {
-    font-size: $fontsize-S;
-    font-family: $fontfamily-gothic;
-    color: inherit;
-    text-decoration: none;
-    margin: 0;
-  }
-
-  i {
-    left: 5px;
-    margin-left: 16px;
-    line-height: 20px;
-  }
+.infomore {
+  font-size: $fontsize-S;
+  font-family: $fontfamily-gothic;
+  color: inherit;
+  margin: 0;
+  transition: ease 0.2s;
 
   &:hover {
+    text-decoration: none;
     color: $gray_nobel;
-    transition: ease 0.2s;
+
+    ~ i {
+      color: $gray_nobel;
+    }
   }
+}
+
+i {
+  transition: ease 0.2s;
+  margin-left: 16px;
+  line-height: 20px;
 }
