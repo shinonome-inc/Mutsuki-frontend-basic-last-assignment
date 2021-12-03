@@ -3,7 +3,7 @@
 .infomore {
   font-size: $fontsize-S;
   font-family: $fontfamily-gothic;
-  color: inherit;
+  color: $black;
   margin: 0;
   transition: ease 0.2s;
 
@@ -15,10 +15,9 @@
       color: $gray_nobel;
     }
   }
-}
 
-i {
-  transition: ease 0.2s;
-  margin-left: 16px;
-  line-height: 20px;
+  i {
+    margin-left: 16px;
+    line-height: 20px;
+  }
 }
