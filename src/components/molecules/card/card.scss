@@ -1,0 +1,38 @@
+@use "../../variables" as *;
+
+.card-img-top {
+  width: 224px;
+  height: 176px;
+}
+
+.card-body {
+  width: 150px;
+
+  .card-text {
+    margin: 0 83px 30px;
+    font-size: $fontsize-S;
+    display: inline-block;
+  }
+}
+
+a.button {
+  height: 55px;
+  width: 150px;
+  background-color: $black;
+  padding: 0 16px;
+  transition: ease 0.2s;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 17px;
+
+  span {
+    font-size: $fontsize-S;
+    color: $white;
+  }
+
+  &:hover {
+    text-decoration: none;
+    background-color: $orange_bistre;
+  }
+}
