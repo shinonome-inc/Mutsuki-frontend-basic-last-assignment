@@ -1,38 +1,52 @@
 @use "../../variables" as *;
 
-.card-img-top {
+.card {
   width: 224px;
-  height: 176px;
-}
 
-.card-body {
-  width: 150px;
-
-  .card-text {
-    margin: 0 83px 30px;
-    font-size: $fontsize-S;
-    display: inline-block;
-  }
-}
-
-a.button {
-  height: 55px;
-  width: 150px;
-  background-color: $black;
-  padding: 0 16px;
-  transition: ease 0.2s;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin: 0 17px;
-
-  span {
-    font-size: $fontsize-S;
-    color: $white;
+  .card-title {
+    color: $orange_bistre;
+    font-size: $fontsize-L;
+    font-family: $fontfamily-gothic;
+    margin: 0;
+    width: 150px;
+    height: 150px;
   }
 
-  &:hover {
-    text-decoration: none;
-    background-color: $orange_bistre;
+  .card-img-top {
+    width: 224px;
+  }
+
+  .card-body {
+    width: 224px;
+    background-color: $white-smoke;
+
+    .card-text {
+      margin-bottom: 30px;
+      font-size: $fontsize-S;
+      font-family: $fontfamily-gothic;
+      text-align: center;
+    }
+  }
+
+  a.button {
+    height: 55px;
+    width: 150px;
+    background-color: $black;
+    padding: 0 16px;
+    transition: ease 0.2s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 17px;
+
+    span {
+      font-size: $fontsize-S;
+      color: $white;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: $orange_bistre;
+    }
   }
 }
