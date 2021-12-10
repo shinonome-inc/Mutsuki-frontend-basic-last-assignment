@@ -1,10 +1,12 @@
 @use "../../variables" as *;
 
 .card {
+  border-color: transparent;
   width: 224px;
   position: relative;
 
   &::before {
+    z-index: 1;
     content: "";
     position: absolute;
     border-bottom: solid 150px transparent;
@@ -12,6 +14,7 @@
   }
 
   .card-title {
+    z-index: 2;
     left: 4px;
     color: $orange_bistre;
     font-size: $fontsize-L;
@@ -26,6 +29,7 @@
     .card-img-top {
       width: 224px;
       transition: ease 0.5s;
+
       &:hover {
         transform: scale(1.2, 1.2);
       }
@@ -60,6 +64,7 @@
     margin: 0 5px;
     position: relative;
     top: 14px;
+
     span {
       font-size: $fontsize-S;
       color: $white;
@@ -89,9 +94,11 @@
         }
       }
     }
+
     .card-body {
       width: 540px;
     }
+
     a.button {
       margin: 0 163px;
     }
