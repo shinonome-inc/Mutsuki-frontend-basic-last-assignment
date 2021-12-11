@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.news-and-events-title {
+  display: flex;
+
+  .news {
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-L;
+    margin: 0;
+  }
+
+  .info {
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-M;
+    margin-left: 16px;
+    margin-bottom: 0;
+    line-height: 29px;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .news-and-events-title {
+    .news {
+      font-size: $fontsize-XXL;
+    }
+    .info {
+      line-height: 57px;
+    }
+  }
+}
