@@ -30,7 +30,8 @@
     background-color: $white-smoke;
 
     .card-text {
-      margin-bottom: 32px;
+      margin: 0;
+      height: 64px;
       font-size: $fontsize-S;
       font-family: $fontfamily-gothic;
       text-align: center;
