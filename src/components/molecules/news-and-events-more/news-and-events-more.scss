@@ -1,0 +1,17 @@
+@use "../../variables" as *;
+
+.info-more {
+  font-size: $fontsize-S;
+  font-family: $fontfamily-gothic;
+  color: $black;
+  transition: ease 0.2s;
+
+  &:hover {
+    text-decoration: none;
+    color: $gray_nobel;
+  }
+
+  i {
+    margin-left: 16px;
+  }
+}
