@@ -4,25 +4,33 @@
   border: none;
   position: relative;
 
-  &::before {
-    z-index: 1;
-    content: "";
-    position: absolute;
-    border-bottom: solid 150px transparent;
-    border-left: solid 150px $white;
-  }
-
   .card-title {
-    z-index: 2;
+    position: absolute;
     left: 4px;
+    z-index: 3;
     color: $orange_bistre;
     font-size: $fontsize-L;
     margin: 0;
-    position: absolute;
   }
 
-  .card-img {
-    overflow: hidden;
+  .card-title-back {
+    &::before {
+      z-index: 2;
+      content: "";
+      position: absolute;
+      border-bottom: solid 150px transparent;
+      border-left: solid 150px $white;
+    }
+
+    .card-img {
+      height: 171px;
+      z-index: 1;
+      overflow: hidden;
+
+      .card-img-top {
+        height: 171px;
+      }
+    }
   }
 
   .card-body {
@@ -30,8 +38,8 @@
     background-color: $white-smoke;
 
     .card-text {
-      margin: 0;
-      height: 64px;
+      margin-bottom: 32px;
+      line-height: 42px;
       font-size: $fontsize-S;
       font-family: $fontfamily-gothic;
       text-align: center;
@@ -46,16 +54,24 @@
   @media screen and (min-width: $breakpoint-md) {
     height: 567px;
 
-    .card-img {
-      height: 384px;
+    .card-title:hover ~ .card-title-back .card-img-top {
+      transform: scale(1.2);
+    }
 
-      .card-img-top {
+    .card-title-back {
+      &:hover .card-img-top {
+        transform: scale(1.2);
+      }
+      .card-img {
         height: 384px;
-        transition: ease 0.5s;
 
-        &:hover {
-          cursor: pointer;
-          transform: scale(1.2, 1.2);
+        .card-img-top {
+          height: 384px;
+          transition: ease 0.5s;
+
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
     }
