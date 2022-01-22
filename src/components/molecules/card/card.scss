@@ -13,24 +13,12 @@
     margin: 0;
   }
 
-  .card-title-back {
-    &::before {
-      z-index: 2;
-      content: "";
-      position: absolute;
-      border-bottom: solid 150px transparent;
-      border-left: solid 150px $white;
-    }
-
-    .card-img {
-      height: 171px;
-      z-index: 1;
-      overflow: hidden;
-
-      .card-img-top {
-        height: 171px;
-      }
-    }
+  &::before {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    border-bottom: solid 150px transparent;
+    border-left: solid 150px $white;
   }
 
   .card-body {
@@ -52,26 +40,22 @@
   }
 
   @media screen and (min-width: $breakpoint-md) {
-    height: 567px;
-
     .card-title:hover ~ .card-title-back .card-img-top {
       transform: scale(1.2);
     }
 
-    .card-title-back {
-      &:hover .card-img-top {
-        transform: scale(1.2);
-      }
-      .card-img {
-        height: 384px;
+    &:hover .card-img-top {
+      transform: scale(1.2);
+    }
 
-        .card-img-top {
-          height: 384px;
-          transition: ease 0.5s;
+    .card-img {
+      overflow: hidden;
 
-          &:hover {
-            transform: scale(1.2);
-          }
+      .card-img-top {
+        transition: ease 0.5s;
+
+        &:hover {
+          transform: scale(1.2);
         }
       }
     }
