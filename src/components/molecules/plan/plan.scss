@@ -1,0 +1,16 @@
+@use "../../variables" as *;
+
+.plan-text-outer {
+  height: 69px;
+  background-color: $orange_zorba;
+  position: relative;
+
+  .plan-text {
+    position: absolute;
+    color: $white;
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-L;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
