@@ -6,7 +6,7 @@
 
   .card-title {
     position: absolute;
-    left: 4px;
+    left: 6px;
     z-index: 3;
     color: $orange_bistre;
     font-size: $fontsize-L;
@@ -22,11 +22,11 @@
   }
 
   .card-body {
-    padding: 32px;
+    padding: 0 35px 32px;
     background-color: $white-smoke;
 
     .card-text {
-      margin-bottom: 32px;
+      margin-bottom: 30px;
       line-height: 42px;
       font-size: $fontsize-S;
       font-family: $fontfamily-gothic;
@@ -58,6 +58,9 @@
           transform: scale(1.2);
         }
       }
+    }
+    .card-body {
+      padding: 32px 46px;
     }
   }
 }
