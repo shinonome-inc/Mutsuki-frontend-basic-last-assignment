@@ -109,3 +109,13 @@
     margin: 0;
   }
 }
+
+@media screen and (min-width: $breakpoint-md) {
+  .plan {
+    margin-bottom: 24px;
+  }
+
+  .plan-even {
+    margin-bottom: 24px;
+  }
+}
