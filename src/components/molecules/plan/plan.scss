@@ -1,16 +1,111 @@
 @use "../../variables" as *;
 
-.plan-text-outer {
+.plan-text {
   height: 69px;
   background-color: $orange_zorba;
-  position: relative;
+  color: $white;
+  font-family: $fontfamily-gothic;
+  font-size: $fontsize-L;
+  padding-top: 20px;
+  margin: 0;
+  text-align: center;
+}
 
-  .plan-text {
-    position: absolute;
+.plan-price {
+  background-color: $gray_desretStorm;
+  height: 142px;
+  border: solid 1px $gray_gainsboro;
+
+  .price-outer {
+    text-align: center;
+    padding-top: 24px;
+
+    .mark-yen {
+      font-size: 20px;
+      font-family: $fontfamily-gothic;
+      color: $orange_bistre;
+      margin: 0;
+    }
+
+    .price {
+      font-size: 50px;
+      margin: 0;
+      font-family: $fontfamily-gothic;
+      color: $orange_bistre;
+    }
+  }
+
+  .unit {
+    font-family: $fontfamily-gothic;
+    color: $black;
+    text-align: center;
+  }
+}
+
+.plan-info {
+  background-color: $white;
+  border: solid 1px $gray_gainsboro;
+  height: 60px;
+  color: $black;
+  font-family: $fontfamily-gothic;
+  padding-top: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.plan-even {
+  border: solid 6px $orange_bistre;
+
+  .plan-text-even {
+    height: 69px;
+    background-color: $orange_bistre;
     color: $white;
     font-family: $fontfamily-gothic;
     font-size: $fontsize-L;
+    padding-top: 20px;
+    margin: 0;
     text-align: center;
-    margin-top: 20px;
+  }
+
+  .plan-price-even {
+    background-color: $gray_desretStorm;
+    height: 142px;
+    border: solid 1px $gray_gainsboro;
+
+    .price-outer-even {
+      text-align: center;
+      padding-top: 24px;
+
+      .mark-yen-even {
+        font-size: 20px;
+        font-family: $fontfamily-gothic;
+        color: $orange_bistre;
+        margin: 0;
+      }
+
+      .price-even {
+        font-size: 50px;
+        margin: 0;
+        font-family: $fontfamily-gothic;
+        color: $orange_bistre;
+      }
+    }
+
+    .unit-even {
+      font-family: $fontfamily-gothic;
+      color: $black;
+      text-align: center;
+    }
+  }
+
+  .plan-info-even {
+    background-color: $white;
+    border: solid 1px $gray_gainsboro;
+    height: 60px;
+    color: $black;
+    font-family: $fontfamily-gothic;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0;
   }
 }
