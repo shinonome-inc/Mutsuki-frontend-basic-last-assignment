@@ -21,6 +21,10 @@
     .events-info-link {
       text-decoration: none;
 
+      .events-img {
+        display: none;
+      }
+
       .events-article {
         color: $black;
         font-size: $fontsize-M;
@@ -50,6 +54,33 @@
 
     .events-info-outer {
       height: 141px;
+
+      .events-info-link {
+        &:hover .events-img {
+          transform: scale(1.2);
+        }
+
+        .events-img-outer {
+          width: 221px;
+          height: 141px;
+          overflow: hidden;
+          float: left;
+
+          .events-img {
+            display: inline;
+            float: left;
+            width: 221px;
+            height: 141px;
+            transition: ease 0.5s;
+          }
+        }
+        .events-article {
+          padding: 37.5px 0 0 245px;
+        }
+        .events-data {
+          padding-left: 245px;
+        }
+      }
     }
   }
 
