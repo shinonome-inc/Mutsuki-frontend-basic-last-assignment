@@ -1,45 +1,50 @@
 @use "../../variables" as *;
 
-.news-and-events-title {
-  margin-bottom: 32px;
-}
-
-.news-info-frame {
-  margin-bottom: 30px;
+.organisms-news {
+  background-color: $gray_gainsboro;
   width: 460px;
 
-  .news-info-outer {
-    border: solid 1px $gray_gainsboro;
-    height: 85px;
-    background-color: $white;
-    transition: ease 0.2s;
+  .news-and-events-title {
+    margin-bottom: 32px;
+  }
 
-    &:hover {
-      background-color: $gray_gainsboro;
-    }
+  .news-info-frame {
+    margin-bottom: 30px;
+    width: 460px;
 
-    .news-info-link {
-      text-decoration: none;
+    .news-info-outer {
+      border: solid 1px $gray_gainsboro;
+      height: 85px;
+      background-color: $white;
+      transition: ease 0.2s;
 
-      .news-data {
-        font-size: $fontsize-XS;
-        color: $gray_nobel;
-        font-family: $fontfamily-gothic;
-        margin: 0;
-        padding: 20px 0 0 20px;
+      &:hover {
+        background-color: $gray_gainsboro;
       }
 
-      .news-article {
-        color: $black;
-        font-size: $fontsize-M;
-        font-family: $fontfamily-gothic;
-        margin: 0;
-        padding: 8px 0 0 20px;
+      .news-info-link {
+        text-decoration: none;
+
+        .news-data {
+          font-size: $fontsize-XS;
+          color: $gray_nobel;
+          font-family: $fontfamily-gothic;
+          margin: 0;
+          padding: 20px 0 0 20px;
+        }
+
+        .news-article {
+          color: $black;
+          font-size: $fontsize-M;
+          font-family: $fontfamily-gothic;
+          margin: 0;
+          padding: 8px 0 0 20px;
+        }
       }
     }
   }
-}
 
-.info-more {
-  margin-left: 346px;
+  .info-more {
+    margin-left: 346px;
+  }
 }
