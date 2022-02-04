@@ -1,8 +1,11 @@
 @use "../../variables" as *;
 
 .plan {
+  padding: 0;
+  margin: 0;
+
   .plan-text {
-    height: 69px;
+    height: 70px;
     background-color: $orange_zorba;
     color: $white;
     font-family: $fontfamily-gothic;
@@ -22,14 +25,14 @@
       padding-top: 24px;
 
       .mark-yen {
-        font-size: 20px;
+        font-size: $fontsize-L;
         font-family: $fontfamily-gothic;
         color: $orange_bistre;
         margin: 0;
       }
 
       .price {
-        font-size: 50px;
+        font-size: $fontsize-XXL;
         margin: 0;
         font-family: $fontfamily-gothic;
         color: $orange_bistre;
@@ -40,6 +43,10 @@
       font-family: $fontfamily-gothic;
       color: $black;
       text-align: center;
+      font-size: $fontsize-S;
+      padding-bottom: 24px;
+      padding-top: 13px;
+      margin: 0;
     }
   }
 
@@ -49,9 +56,29 @@
     height: 60px;
     color: $black;
     font-family: $fontfamily-gothic;
+    font-size: $fontsize-S;
     padding-top: 20px;
     text-align: center;
     margin: 0;
+
+    &:last-child {
+      height: 70px;
+      padding-top: 15px;
+    }
+  }
+}
+
+.plan:nth-child(even) {
+  border: solid 6px $orange_bistre;
+  box-sizing: border-box;
+
+  .plan-text {
+    background-color: $orange_bistre;
+    height: 60px;
+  }
+  .plan-info:last-child {
+    height: 80px;
+    padding-top: 20px;
   }
 }
 
