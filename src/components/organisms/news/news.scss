@@ -17,6 +17,7 @@
       height: 85px;
       background-color: $white;
       transition: ease 0.2s;
+      list-style-type: none;
 
       &:hover {
         background-color: $gray_gainsboro;
