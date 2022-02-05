@@ -6,7 +6,7 @@
 
 .events-info-frame {
   margin-bottom: 40px;
-  width: 720px;
+  width: 90%;
 
   .events-info-outer {
     border: solid 1px $gray_gainsboro;
@@ -45,7 +45,17 @@
 }
 
 .info-more {
-  margin-left: 606px;
+  margin-left: 400px;
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .events-info-frame {
+    width: 720px;
+  }
+
+  .info-more {
+    margin-left: 606px;
+  }
 }
 
 @media screen and (min-width: $breakpoint-lg) {
