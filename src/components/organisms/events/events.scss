@@ -6,17 +6,12 @@
 
 .events-info-frame {
   margin-bottom: 40px;
-  width: 90%;
+  display: flexbox;
 
   .events-info-outer {
     border: solid 1px $gray_gainsboro;
     height: 69px;
     background-color: $white;
-    transition: ease 0.2s;
-
-    &:hover {
-      background-color: $gray_gainsboro;
-    }
 
     .events-info-link {
       text-decoration: none;
@@ -31,6 +26,11 @@
         font-family: $fontfamily-gothic;
         margin: 0;
         padding: 10px 0 0 20px;
+        transition: ease 0.2s;
+
+        &:hover {
+          color: $gray_gainsboro;
+        }
       }
 
       .events-data {
@@ -84,6 +84,7 @@
             transition: ease 0.5s;
           }
         }
+
         .events-article {
           padding: 37.5px 0 0 245px;
         }
