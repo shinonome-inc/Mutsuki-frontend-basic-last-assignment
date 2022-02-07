@@ -1,7 +1,6 @@
 @use "../../variables" as *;
 
 .organisms-news {
-  background-color: $gray_gainsboro;
   width: 460px;
 
   .news-and-events-title {
@@ -16,12 +15,7 @@
       border: solid 1px $gray_gainsboro;
       height: 85px;
       background-color: $white;
-      transition: ease 0.2s;
       list-style-type: none;
-
-      &:hover {
-        background-color: $gray_gainsboro;
-      }
 
       .news-info-link {
         text-decoration: none;
@@ -40,6 +34,11 @@
           font-family: $fontfamily-gothic;
           margin: 0;
           padding: 8px 0 0 20px;
+          transition: ease 0.2s;
+
+          &:hover {
+            color: $gray_gainsboro;
+          }
         }
       }
     }
