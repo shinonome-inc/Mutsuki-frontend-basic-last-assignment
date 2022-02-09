@@ -6,12 +6,19 @@
 
 .events-info-frame {
   margin-bottom: 40px;
-  display: flexbox;
+  display: block;
 
   .events-info-outer {
-    border: solid 1px $gray_gainsboro;
+    border-bottom: solid 1px $gray_gainsboro;
+    border-left: solid 1px $gray_gainsboro;
+    border-right: solid 1px $gray_gainsboro;
     height: 69px;
     background-color: $white;
+    padding-left: 20px;
+
+    &:first-child {
+      border: solid 1px $gray_gainsboro;
+    }
 
     .events-info-link {
       text-decoration: none;
@@ -23,47 +30,36 @@
       .events-article {
         color: $black;
         font-size: $fontsize-M;
-        font-family: $fontfamily-gothic;
         margin: 0;
-        padding: 10px 0 0 20px;
-        transition: ease 0.2s;
-
-        &:hover {
-          color: $gray_gainsboro;
-        }
+        padding-top: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 400px;
       }
 
       .events-data {
         font-size: $fontsize-XS;
-        color: $gray_nobel;
-        font-family: $fontfamily-gothic;
+        color: $gray_gainsboro;
         margin: 0;
-        padding: 8px 0 0 20px;
+        padding-top: 8px;
       }
     }
   }
 }
 
 .info-more {
-  margin-left: 455px;
-}
-
-@media screen and (min-width: $breakpoint-md) {
-  .events-info-frame {
-    width: 720px;
-  }
-
-  .info-more {
-    margin-left: 606px;
-  }
+  display: block;
+  text-align: right;
 }
 
 @media screen and (min-width: $breakpoint-lg) {
   .events-info-frame {
-    width: 460px;
-
     .events-info-outer {
       height: 141px;
+      padding: 0;
+      display: flexbox;
+      flex-direction: row;
 
       .events-info-link {
         &:hover .events-img {
@@ -74,28 +70,25 @@
           width: 221px;
           height: 141px;
           overflow: hidden;
-          float: left;
+          margin: 0;
+          display: inline-block;
 
           .events-img {
             display: inline;
-            float: left;
             width: 221px;
             height: 141px;
             transition: ease 0.5s;
           }
         }
-
-        .events-article {
-          padding: 37.5px 0 0 245px;
-        }
-        .events-data {
-          padding-left: 245px;
+        .events-article-outer {
+          .events-article {
+            padding: 0;
+          }
+          .events-data {
+            padding: 0;
+          }
         }
       }
     }
-  }
-
-  .info-more {
-    margin-left: 346px;
   }
 }
