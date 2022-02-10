@@ -1,1 +1,43 @@
 @use "../../variables" as *;
+
+.top {
+  margin-bottom: 40px;
+
+  .top-title {
+    position: absolute;
+    color: $white;
+    z-index: 2;
+    writing-mode: vertical-rl;
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-L;
+    padding-top: 100px;
+    margin-left: 45%;
+  }
+
+  .top-image-outer {
+    z-index: 1;
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+  }
+
+  .message {
+    color: $white;
+    background-color: $black;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    .top-title {
+      font-size: $fontsize-XXL;
+      padding-top: 50%;
+    }
+
+    .top-image-outer {
+      height: 700px;
+    }
+
+    .message {
+      width: 992px;
+    }
+  }
+}
