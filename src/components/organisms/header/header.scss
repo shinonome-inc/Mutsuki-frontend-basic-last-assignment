@@ -27,17 +27,20 @@
     &:hover {
       background-color: $orange_bistre;
     }
+    .concept-outer {
+      display: flex;
+      justify-content: space-between;
 
-    .concept {
-      color: $white;
-      font-size: $fontsize-S;
-    }
+      .concept {
+        color: $white;
+        font-size: $fontsize-S;
+      }
 
-    .icon-plus {
-      float: right;
-      margin-right: 17px;
-      width: 26px;
-      height: 26px;
+      .icon-plus {
+        margin-right: 17px;
+        width: 26px;
+        height: 26px;
+      }
     }
   }
 
