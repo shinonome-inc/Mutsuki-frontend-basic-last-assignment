@@ -22,6 +22,8 @@
 
     .events-info-link {
       text-decoration: none;
+      display: flex;
+      align-items: center;
 
       .events-img {
         display: none;
@@ -58,8 +60,6 @@
     .events-info-outer {
       height: 141px;
       padding: 0;
-      display: flexbox;
-      flex-direction: row;
 
       .events-info-link {
         &:hover .events-img {
@@ -70,22 +70,13 @@
           width: 221px;
           height: 141px;
           overflow: hidden;
-          margin: 0;
-          display: inline-block;
+          margin-right: 24px;
 
           .events-img {
             display: inline;
             width: 221px;
             height: 141px;
             transition: ease 0.5s;
-          }
-        }
-        .events-article-outer {
-          .events-article {
-            padding: 0;
-          }
-          .events-data {
-            padding: 0;
           }
         }
       }
