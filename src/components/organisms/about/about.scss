@@ -1,1 +1,51 @@
 @use "../../variables" as *;
+
+.about {
+  .col {
+    padding: 0;
+    .about-img {
+      width: 290px;
+    }
+  }
+
+  .message {
+    background-color: $white-smoke;
+    width: 560px;
+    margin-left: 5px;
+    .about-message {
+      color: $orange_bistre;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    .col {
+      padding: 0;
+      .about-img {
+        width: 360px;
+        height: 340px;
+      }
+    }
+
+    .message {
+      background-color: $white-smoke;
+      width: 720px;
+      margin-left: 15px;
+      .about-message {
+        color: $orange_bistre;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    .col {
+      .about-img {
+        width: 240px;
+        height: 240px;
+      }
+    }
+    .message {
+      width: 960px;
+      margin-left: 20px;
+    }
+  }
+}
