@@ -13,7 +13,7 @@
     border-right: solid 1px $gray_gainsboro;
     height: 85px;
     background-color: $white;
-    padding-left: 20px;
+    padding: 0 20px;
 
     &:first-child {
       border: solid 1px $gray_gainsboro;
@@ -29,16 +29,14 @@
         padding-top: 20px;
       }
 
-      .news-article {
+      .news-info {
         color: $black;
         font-size: $fontsize-M;
-        margin: 0;
-        padding-top: 3px;
+        margin-top: 3px;
         transition: ease 0.2s;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        width: 435px;
 
         &:hover {
           color: $orange_bistre;
@@ -48,7 +46,11 @@
   }
 }
 
-.info-more {
-  text-align: right;
+.info-more-outer {
   display: block;
+  text-align: right;
+
+  .info-more {
+    width: 200px;
+  }
 }
