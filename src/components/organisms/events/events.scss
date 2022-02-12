@@ -6,7 +6,6 @@
 
 .events-info-frame {
   margin-bottom: 40px;
-  display: block;
 
   .events-info-outer {
     border-bottom: solid 1px $gray_gainsboro;
@@ -14,7 +13,7 @@
     border-right: solid 1px $gray_gainsboro;
     height: 69px;
     background-color: $white;
-    padding-left: 20px;
+    padding: 0 20px;
 
     &:first-child {
       border: solid 1px $gray_gainsboro;
@@ -29,22 +28,25 @@
         display: none;
       }
 
-      .events-article {
-        color: $black;
-        font-size: $fontsize-M;
-        margin: 0;
-        padding-top: 10px;
-        text-overflow: ellipsis;
+      .events-article-outer {
         overflow: hidden;
-        white-space: nowrap;
-        width: 400px;
-      }
 
-      .events-data {
-        font-size: $fontsize-XS;
-        color: $gray_gainsboro;
-        margin: 0;
-        padding-top: 8px;
+        .events-article {
+          color: $black;
+          font-size: $fontsize-M;
+          margin: 0;
+          margin-top: 10px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+
+        .events-data {
+          font-size: $fontsize-XS;
+          color: $gray_gainsboro;
+          margin: 0;
+          margin-top: 8px;
+        }
       }
     }
   }
@@ -70,7 +72,6 @@
           width: 221px;
           height: 141px;
           overflow: hidden;
-          margin-right: 24px;
 
           .events-img {
             display: inline;
@@ -78,6 +79,10 @@
             height: 141px;
             transition: ease 0.5s;
           }
+        }
+
+        .events-article-outer {
+          padding-left: 24px;
         }
       }
     }
