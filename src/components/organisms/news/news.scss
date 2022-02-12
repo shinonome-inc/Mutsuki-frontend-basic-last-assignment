@@ -13,7 +13,7 @@
     border-right: solid 1px $gray_gainsboro;
     height: 85px;
     background-color: $white;
-    padding: 0 20px;
+    padding: 1px 20px 0 20px;
 
     &:first-child {
       border: solid 1px $gray_gainsboro;
@@ -26,7 +26,7 @@
         display: block;
         font-size: $fontsize-XS;
         color: $gray_nobel;
-        padding-top: 20px;
+        margin-top: 20px;
       }
 
       .news-info {
@@ -49,8 +49,4 @@
 .info-more-outer {
   display: block;
   text-align: right;
-
-  .info-more {
-    width: 200px;
-  }
 }
