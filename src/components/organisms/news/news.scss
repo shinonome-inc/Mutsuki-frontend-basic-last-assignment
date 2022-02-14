@@ -13,7 +13,7 @@
     border-right: solid 1px $gray_gainsboro;
     height: 85px;
     background-color: $white;
-    padding: 1px 20px 0;
+    padding: 20px;
 
     &:first-child {
       border: solid 1px $gray_gainsboro;
@@ -26,13 +26,14 @@
         display: block;
         font-size: $fontsize-XS;
         color: $gray_nobel;
-        margin-top: 20px;
+        margin: 0;
+        line-height: 1;
       }
 
       .news-info {
         color: $black;
         font-size: $fontsize-M;
-        margin-top: 3px;
+        margin-top: 10px;
         transition: ease 0.2s;
         text-overflow: ellipsis;
         overflow: hidden;
