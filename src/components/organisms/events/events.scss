@@ -1,88 +1,91 @@
 @use "../../variables" as *;
 
-.news-and-events-title {
-  margin-bottom: 42px;
-}
+.organisms-events {
+  margin-bottom: 35px;
 
-.events-info-frame {
-  margin-bottom: 40px;
+  .news-and-events-title {
+    margin-bottom: 42px;
+  }
 
-  .events-info-outer {
-    border-bottom: solid 1px $gray_gainsboro;
-    border-left: solid 1px $gray_gainsboro;
-    border-right: solid 1px $gray_gainsboro;
-    height: 69px;
-    background-color: $white;
-    padding: 0 20px;
+  .events-info-frame {
+    margin-bottom: 40px;
 
-    &:first-child {
-      border: solid 1px $gray_gainsboro;
-    }
+    .events-info-outer {
+      border-bottom: solid 1px $gray_gainsboro;
+      border-left: solid 1px $gray_gainsboro;
+      border-right: solid 1px $gray_gainsboro;
+      height: 69px;
+      background-color: $white;
+      padding: 0 20px;
 
-    .events-info-link {
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-
-      .events-img {
-        display: none;
+      &:first-child {
+        border: solid 1px $gray_gainsboro;
       }
 
-      .events-article-outer {
-        overflow: hidden;
+      .events-info-link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
 
-        .events-article {
-          color: $black;
-          font-size: $fontsize-M;
-          margin: 0;
-          margin-top: 10px;
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
+        .events-img {
+          display: none;
         }
 
-        .events-data {
-          font-size: $fontsize-XS;
-          color: $gray_gainsboro;
-          margin: 0;
-          margin-top: 8px;
+        .events-article-outer {
+          overflow: hidden;
+
+          .events-article-title {
+            color: $black;
+            font-size: $fontsize-M;
+            margin: 0;
+            margin-top: 10px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+          }
+
+          .events-data {
+            font-size: $fontsize-XS;
+            color: $gray_gainsboro;
+            margin: 0;
+            margin-top: 8px;
+          }
         }
       }
     }
   }
-}
 
-.info-more {
-  display: block;
-  text-align: right;
-}
+  .info-more-outer {
+    display: block;
+    text-align: right;
+  }
 
-@media screen and (min-width: $breakpoint-lg) {
-  .events-info-frame {
-    .events-info-outer {
-      height: 141px;
-      padding: 0;
+  @media screen and (min-width: $breakpoint-lg) {
+    .events-info-frame {
+      .events-info-outer {
+        height: 141px;
+        padding: 0;
 
-      .events-info-link {
-        &:hover .events-img {
-          transform: scale(1.2);
-        }
-
-        .events-img-outer {
-          width: 221px;
-          height: 141px;
+        .events-info-link {
           overflow: hidden;
-
-          .events-img {
-            display: inline;
-            width: 221px;
-            height: 141px;
-            transition: ease 0.5s;
+          &:hover .events-img {
+            transform: scale(1.2);
           }
-        }
 
-        .events-article-outer {
-          padding-left: 24px;
+          .events-img-outer {
+            width: 221px;
+            .events-img {
+              display: inline;
+              width: 221px;
+              height: 141px;
+              transition: ease 0.5s;
+            }
+          }
+
+          .events-article-outer {
+            margin-left: 24px;
+          }
         }
       }
     }
