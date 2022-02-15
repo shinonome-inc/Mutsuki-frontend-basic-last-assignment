@@ -54,18 +54,12 @@
     border-left: solid 1px $gray_gainsboro;
     border-right: solid 1px $gray_gainsboro;
     border-bottom: solid 1px $gray_gainsboro;
-    height: 60px;
     color: $black;
     font-family: $fontfamily-gothic;
     font-size: $fontsize-S;
-    padding-top: 20px;
+    padding: 20px 19px 2px;
     margin: 0;
     text-align: center;
-
-    &:last-child {
-      height: 80px;
-      padding-top: 20px;
-    }
   }
 }
 
@@ -75,14 +69,9 @@
 
   .plan-text {
     background-color: $orange_bistre;
-    height: 64px;
     padding-top: 15px;
     margin: 0;
-  }
-
-  .plan-info:last-child {
-    height: 75px;
-    padding-top: 20px;
+    height: 60px;
   }
 }
 
