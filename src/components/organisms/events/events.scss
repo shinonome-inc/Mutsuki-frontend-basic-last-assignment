@@ -14,14 +14,12 @@
       border-bottom: solid 1px $gray_gainsboro;
       border-left: solid 1px $gray_gainsboro;
       border-right: solid 1px $gray_gainsboro;
-      height: 69px;
       background-color: $white;
-      padding: 0 20px;
+      padding: 10px 20px 14px;
 
       &:first-child {
         border: solid 1px $gray_gainsboro;
       }
-
       .events-info-link {
         text-decoration: none;
         display: flex;
@@ -38,7 +36,6 @@
             color: $black;
             font-size: $fontsize-M;
             margin: 0;
-            margin-top: 10px;
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
@@ -48,8 +45,6 @@
           .events-data {
             font-size: $fontsize-XS;
             color: $gray_gainsboro;
-            margin: 0;
-            margin-top: 8px;
           }
         }
       }
@@ -68,13 +63,13 @@
         padding: 0;
 
         .events-info-link {
-          overflow: hidden;
           &:hover .events-img {
             transform: scale(1.2);
           }
 
           .events-img-outer {
             width: 221px;
+            overflow: hidden;
 
             .events-img {
               display: inline;
