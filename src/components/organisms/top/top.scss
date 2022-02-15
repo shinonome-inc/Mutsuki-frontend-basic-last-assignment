@@ -3,41 +3,47 @@
 .top {
   margin-bottom: 40px;
 
-  .top-title {
-    position: absolute;
-    color: $white;
-    z-index: 2;
-    writing-mode: vertical-rl;
-    font-family: $fontfamily-mincho;
-    font-size: $fontsize-L;
-    padding-top: 100px;
-    margin-left: 45%;
-  }
-
-  .top-image-outer {
-    z-index: 1;
-    position: relative;
+  .top-title-outer {
+    background-image: url(./top-image.png);
     height: 360px;
-    overflow: hidden;
+    padding-top: 1px;
+
+    .top-title {
+      color: $white;
+      writing-mode: vertical-rl;
+      font-family: $fontfamily-mincho;
+      font-size: $fontsize-L;
+      padding: 0;
+      margin: 100px auto 0;
+    }
   }
 
   .message {
     color: $white;
     background-color: $black;
+
+    .message-title {
+      font-size: $fontsize-L;
+      font-family: $fontfamily-mincho;
+    }
   }
 
   @media (min-width: $breakpoint-lg) {
-    .top-title {
-      font-size: $fontsize-XXL;
-      padding-top: 50%;
-    }
-
-    .top-image-outer {
+    .top-title-outer {
+      background-size: auto 100%;
       height: 700px;
+      background-position: center;
+
+      .top-title {
+        font-size: $fontsize-XXL;
+        margin: 190px auto 0;
+      }
     }
 
     .message {
-      width: 992px;
+      .message-title {
+        font-size: $fontsize-XL;
+      }
     }
   }
 }
