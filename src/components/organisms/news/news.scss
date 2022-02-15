@@ -6,21 +6,22 @@
 
 .news-info-frame {
   margin-bottom: 30px;
+  border-top: solid 1px $gray_gainsboro;
 
-  .news-info-outer {
-    border-bottom: solid 1px $gray_gainsboro;
-    border-left: solid 1px $gray_gainsboro;
-    border-right: solid 1px $gray_gainsboro;
-    height: 85px;
-    background-color: $white;
-    padding: 20px;
+  .news-info-link {
+    text-decoration: none;
 
-    &:first-child {
-      border: solid 1px $gray_gainsboro;
+    &:hover .news-info-outer .news-info {
+      color: $orange_bistre;
     }
 
-    .news-info-link {
-      text-decoration: none;
+    .news-info-outer {
+      border-left: solid 1px $gray_gainsboro;
+      border-right: solid 1px $gray_gainsboro;
+      border-bottom: solid 1px $gray_gainsboro;
+      height: 85px;
+      background-color: $white;
+      padding: 20px;
 
       .news-data {
         display: block;
@@ -38,10 +39,6 @@
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-
-        &:hover {
-          color: $orange_bistre;
-        }
       }
     }
   }
