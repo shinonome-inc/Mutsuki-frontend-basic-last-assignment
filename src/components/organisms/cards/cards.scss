@@ -1,0 +1,9 @@
+@use "../../variables" as *;
+
+.card {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 100px;
+  }
+}
