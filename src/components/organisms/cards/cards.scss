@@ -1,9 +1,23 @@
 @use "../../variables" as *;
 
-.card {
-  margin-bottom: 40px;
+.col {
+  .card {
+    margin-bottom: 40px;
 
-  @media screen and (min-width: $breakpoint-md) {
-    margin-bottom: 100px;
+    .card-body {
+      padding-top: 32px;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+      margin-bottom: 100px;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    &:nth-child(3) {
+      .card-body {
+        padding-bottom: 74px;
+      }
+    }
   }
 }
