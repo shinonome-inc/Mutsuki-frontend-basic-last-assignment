@@ -7,6 +7,10 @@
         padding: 0;
       }
 
+      &:nth-child(2) {
+        display: block;
+      }
+
       .message {
         background-color: $white-smoke;
 
