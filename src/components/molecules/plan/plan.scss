@@ -1,0 +1,84 @@
+@use "../../variables" as *;
+
+.plan {
+  padding: 0;
+  margin-bottom: 24px;
+
+  .plan-text {
+    height: 69px;
+    background-color: $orange_zorba;
+    color: $white;
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-L;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .price-outer {
+    background-color: $gray_desretStorm;
+    border: solid 1px $gray_gainsboro;
+
+    .plan-price {
+      text-align: center;
+      margin-top: 24px;
+
+      .mark-yen {
+        font-size: $fontsize-L;
+        font-family: $fontfamily-gothic;
+        color: $orange_bistre;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      .price {
+        font-weight: bold;
+        font-size: $fontsize-XXL;
+        margin: 0;
+        font-family: $fontfamily-gothic;
+        color: $orange_bistre;
+      }
+    }
+
+    .unit {
+      font-family: $fontfamily-gothic;
+      color: $black;
+      text-align: center;
+      font-size: $fontsize-S;
+      margin-bottom: 24px;
+      margin-top: 13px;
+    }
+  }
+
+  .plan-info {
+    list-style-type: none;
+    background-color: $white;
+    border-left: solid 1px $gray_gainsboro;
+    border-right: solid 1px $gray_gainsboro;
+    border-bottom: solid 1px $gray_gainsboro;
+    color: $black;
+    font-family: $fontfamily-gothic;
+    font-size: $fontsize-S;
+    padding: 20px 19px 2px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.plan:nth-child(even) {
+  border: solid 5px $orange_bistre;
+  box-sizing: border-box;
+
+  .plan-text {
+    background-color: $orange_bistre;
+    padding-top: 15px;
+    margin: 0;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .plan {
+    margin: 0;
+  }
+}
