@@ -1,0 +1,50 @@
+@use "../../variables" as *;
+
+.news-and-events-title {
+  margin-bottom: 32px;
+}
+
+.news-info-frame {
+  margin-bottom: 30px;
+  border-top: solid 1px $gray_gainsboro;
+
+  .news-info-link {
+    text-decoration: none;
+
+    &:hover .news-info-outer .news-info {
+      color: $orange_bistre;
+    }
+
+    .news-info-outer {
+      border-left: solid 1px $gray_gainsboro;
+      border-right: solid 1px $gray_gainsboro;
+      border-bottom: solid 1px $gray_gainsboro;
+      height: 85px;
+      background-color: $white;
+      padding: 20px;
+
+      .news-data {
+        display: block;
+        font-size: $fontsize-XS;
+        color: $gray_nobel;
+        margin: 0;
+        line-height: 1;
+      }
+
+      .news-info {
+        color: $black;
+        font-size: $fontsize-M;
+        margin-top: 10px;
+        transition: ease 0.2s;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.info-more-outer {
+  display: block;
+  text-align: right;
+}
