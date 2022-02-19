@@ -1,1 +1,35 @@
 @use "../../variables" as *;
+
+.message {
+  padding-top: 0;
+
+  .message-title {
+    color: $orange_bistre;
+  }
+}
+
+.row {
+  .col:nth-child(even) {
+    .plan {
+      border: solid 5px $orange_bistre;
+      box-sizing: border-box;
+
+      .plan-text {
+        background-color: $orange_bistre;
+        padding-top: 15px;
+        margin: 0;
+        height: 60px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    .col {
+      margin-bottom: 51px;
+    }
+  }
+}
+
+.button {
+  margin: 0 auto;
+}
