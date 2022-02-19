@@ -1,0 +1,53 @@
+@use "../../variables" as *;
+
+.top {
+  margin-bottom: 40px;
+
+  .top-title-outer {
+    background-image: url(./top-image.png);
+    height: 360px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .top-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      color: $white;
+      writing-mode: vertical-rl;
+      font-family: $fontfamily-mincho;
+      font-size: $fontsize-L;
+      margin: 0;
+    }
+  }
+
+  .message {
+    color: $white;
+    background-color: $black;
+
+    .message-title {
+      font-size: $fontsize-L;
+      font-family: $fontfamily-mincho;
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    .top-title-outer {
+      height: 700px;
+
+      .top-title {
+        font-size: $fontsize-XXL;
+      }
+    }
+
+    .message {
+      .message-title {
+        font-size: $fontsize-XL;
+      }
+    }
+  }
+}
