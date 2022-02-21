@@ -8,24 +8,26 @@
   }
 }
 
-.row {
-  .col:nth-child(even) {
-    .plan {
-      border: solid 5px $orange_bistre;
-      box-sizing: border-box;
+.container {
+  .row {
+    .col:nth-child(even) {
+      .plan {
+        border: solid 5px $orange_bistre;
+        box-sizing: border-box;
 
-      .plan-text {
-        background-color: $orange_bistre;
-        padding-top: 15px;
-        margin: 0;
-        height: 60px;
+        .plan-text {
+          background-color: $orange_bistre;
+          padding-top: 15px;
+          margin: 0;
+          height: 60px;
+        }
       }
     }
-  }
 
-  @media screen and (min-width: $breakpoint-md) {
-    .col {
-      margin-bottom: 51px;
+    @media screen and (min-width: $breakpoint-md) {
+      .col {
+        margin-bottom: 51px;
+      }
     }
   }
 }
