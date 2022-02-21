@@ -3,21 +3,19 @@
 .about {
   .container {
     .row {
+      margin: 0;
+
       .col {
         padding: 0;
       }
+    }
 
-      &:nth-child(2) {
-        display: block;
-      }
+    .message {
+      background-color: $white-smoke;
 
-      .message {
-        background-color: $white-smoke;
-
-        .about-message {
-          color: $orange_bistre;
-          font-family: $fontfamily-mincho;
-        }
+      .about-message {
+        color: $orange_bistre;
+        font-family: $fontfamily-mincho;
       }
     }
   }
