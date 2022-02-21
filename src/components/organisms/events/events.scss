@@ -10,18 +10,20 @@
   .events-info-frame {
     margin-bottom: 40px;
 
-    .events-info-outer {
-      border-bottom: solid 1px $gray_gainsboro;
-      border-left: solid 1px $gray_gainsboro;
-      border-right: solid 1px $gray_gainsboro;
-      background-color: $white;
-      padding: 10px 20px 14px;
+    .events-info-link {
+      text-decoration: none;
 
-      &:first-child {
+      &:first-child .events-info-outer {
         border: solid 1px $gray_gainsboro;
       }
-      .events-info-link {
-        text-decoration: none;
+
+      .events-info-outer {
+        border-bottom: solid 1px $gray_gainsboro;
+        border-left: solid 1px $gray_gainsboro;
+        border-right: solid 1px $gray_gainsboro;
+        background-color: $white;
+        padding: 10px 20px 14px;
+
         display: flex;
         align-items: center;
 
@@ -58,11 +60,12 @@
 
   @media screen and (min-width: $breakpoint-lg) {
     .events-info-frame {
-      .events-info-outer {
+      .events-info-link {
         height: 141px;
         padding: 0;
 
-        .events-info-link {
+        .events-info-outer {
+          padding: 0;
           &:hover .events-img {
             transform: scale(1.2);
           }
