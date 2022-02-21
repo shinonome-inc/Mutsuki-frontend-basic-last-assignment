@@ -10,13 +10,21 @@
 
     @media screen and (min-width: $breakpoint-md) {
       margin-bottom: 100px;
-    }
-  }
 
-  @media screen and (min-width: $breakpoint-xl) {
-    &:nth-child(3) {
       .card-body {
-        padding-bottom: 74px;
+        height: 570px;
+      }
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      .card-body {
+        height: 400px;
+      }
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+      .card-body {
+        height: 360px;
       }
     }
   }
