@@ -1,1 +1,177 @@
 @use "../../variables" as *;
+
+.footer {
+  .contact {
+    padding: 32px 20px;
+    text-align: center;
+    .logo-black {
+      margin-bottom: 20px;
+    }
+
+    .footer-info {
+      margin-bottom: 20px;
+      font-size: $fontsize-S;
+      line-height: 2;
+    }
+
+    .icon-link {
+      margin-right: 14px;
+      height: 16px;
+
+      .fab {
+        color: $black;
+        transition: ease 0.2s;
+        &:hover {
+          color: $gray_nobel;
+        }
+      }
+      .fas {
+        color: $black;
+        transition: ease 0.2s;
+        &:hover {
+          color: $gray_nobel;
+        }
+      }
+    }
+  }
+
+  .nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    background-color: $white-smoke;
+    border-top: solid 1px $gray_nobel;
+    border-bottom: solid 1px $gray_nobel;
+    .nav-item {
+      font-size: $fontsize-S;
+      width: calc(50% - 10px);
+      list-style-type: none;
+      margin: 3px 0;
+      padding-left: 16px;
+      .nav-link {
+        color: $black;
+        padding: 0;
+        margin: 0;
+        width: 41px;
+        transition: ease 0.2s;
+        &:hover {
+          color: $orange_bistre;
+        }
+      }
+      &:nth-child(1) {
+        margin-top: 16px;
+      }
+      &:nth-child(2) {
+        margin-top: 16px;
+        .nav-link {
+          width: 63px;
+        }
+      }
+      &:nth-child(3) .nav-link {
+        width: 55px;
+      }
+      &:nth-child(4) .nav-link {
+        width: 42px;
+      }
+      &:nth-child(5) .nav-link {
+        width: 73px;
+      }
+      &:nth-child(6) .nav-link {
+        width: 37px;
+      }
+      &:nth-child(7) {
+        margin-bottom: 16px;
+        .nav-link {
+          width: 51px;
+        }
+      }
+      &:nth-child(8) {
+        margin-bottom: 16px;
+        .nav-link {
+          width: 78px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom-outer {
+    text-align: center;
+    .footer-bottom {
+      font-size: $fontsize-XS;
+      color: $white;
+      background-color: $black;
+      padding: 13px 16px;
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    .contact {
+      height: 240px;
+      padding: 52px 20px;
+    }
+    .nav-list {
+      height: 52px;
+      text-align: center;
+      flex-wrap: nowrap;
+      .nav-item {
+        margin: 0;
+        padding: 0;
+        height: 21px;
+        .nav-link {
+          margin: 0;
+        }
+
+        &:nth-child(1) {
+          width: 49px;
+          margin-top: 16px;
+          margin-left: auto;
+          border-right: solid 1px;
+        }
+        &:nth-child(2) {
+          width: 72px;
+          margin-left: 8px;
+          margin-right: 8px;
+          margin-top: 16px;
+          border-right: solid 1px;
+        }
+        &:nth-child(3) {
+          width: 63px;
+          margin-right: 8px;
+          border-right: solid 1px;
+          margin-top: 16px;
+        }
+        &:nth-child(4) {
+          width: 50px;
+          margin-right: 8px;
+          border-right: solid 1px;
+          margin-top: 16px;
+        }
+        &:nth-child(5) {
+          width: 81px;
+          margin-right: 8px;
+          margin-top: 16px;
+          border-right: solid 1px;
+        }
+        &:nth-child(6) {
+          width: 45px;
+          margin-right: 8px;
+          margin-top: 16px;
+          border-right: solid 1px;
+        }
+        &:nth-child(7) {
+          width: 59px;
+          margin-right: 8px;
+          margin-top: 16px;
+          border-right: solid 1px;
+        }
+        &:nth-child(8) {
+          width: 78px;
+          margin-top: 16px;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
