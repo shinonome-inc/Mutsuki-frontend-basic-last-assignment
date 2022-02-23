@@ -4,6 +4,14 @@
   .card {
     margin-bottom: 40px;
 
+    .card-img {
+      border-radius: 0;
+
+      .card-img-top {
+        border-radius: 0;
+      }
+    }
+
     .card-body {
       padding-top: 32px;
     }
