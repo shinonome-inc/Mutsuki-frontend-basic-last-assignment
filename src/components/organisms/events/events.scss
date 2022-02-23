@@ -23,7 +23,6 @@
         border-right: solid 1px $gray_gainsboro;
         background-color: $white;
         padding: 10px 20px 14px;
-
         display: flex;
         align-items: center;
 
@@ -61,17 +60,23 @@
   @media screen and (min-width: $breakpoint-lg) {
     .events-info-frame {
       .events-info-link {
-        height: 141px;
-        padding: 0;
+        &:first-child .events-info-outer {
+          border: none;
+
+          .events-article-outer {
+            border-top: solid 1px $gray_gainsboro;
+          }
+        }
 
         .events-info-outer {
           padding: 0;
+          border: none;
+
           &:hover .events-img {
             transform: scale(1.2);
           }
 
           .events-img-outer {
-            width: 221px;
             overflow: hidden;
 
             .events-img {
@@ -83,7 +88,10 @@
           }
 
           .events-article-outer {
-            padding: 0 24px;
+            padding: 48px 24px;
+            border-bottom: solid 1px $gray_gainsboro;
+            border-right: solid 1px $gray_gainsboro;
+            width: calc(100% - 220px);
           }
         }
       }
