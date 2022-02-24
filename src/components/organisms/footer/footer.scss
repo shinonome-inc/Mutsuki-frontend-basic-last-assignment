@@ -19,7 +19,7 @@
       margin-right: 14px;
       height: 16px;
 
-      .fab {
+      .icon-sns {
         color: $black;
         transition: ease 0.2s;
 
@@ -28,7 +28,7 @@
         }
       }
 
-      .fas {
+      .icon-wave {
         color: $black;
         transition: ease 0.2s;
 
@@ -40,73 +40,24 @@
   }
 
   .nav-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
+    padding: 16px;
     background-color: $white-smoke;
     border-top: solid 1px $gray_nobel;
     border-bottom: solid 1px $gray_nobel;
+    margin: 0;
+    row-gap: 7px;
 
     .nav-item {
-      font-size: $fontsize-S;
-      width: calc(50% - 10px);
-      list-style-type: none;
-      margin: 3px 0;
-      padding-left: 16px;
+      padding: 0;
 
       .nav-link {
+        font-size: $fontsize-S;
         color: $black;
         padding: 0;
-        margin: 0;
-        width: 41px;
         transition: ease 0.2s;
 
         &:hover {
           color: $orange_bistre;
-        }
-      }
-
-      &:nth-child(1) {
-        margin-top: 16px;
-      }
-      &:nth-child(2) {
-        margin-top: 16px;
-
-        .nav-link {
-          width: 63px;
-        }
-      }
-
-      &:nth-child(3) .nav-link {
-        width: 55px;
-      }
-
-      &:nth-child(4) .nav-link {
-        width: 42px;
-      }
-
-      &:nth-child(5) .nav-link {
-        width: 73px;
-      }
-
-      &:nth-child(6) .nav-link {
-        width: 37px;
-      }
-
-      &:nth-child(7) {
-        margin-bottom: 16px;
-
-        .nav-link {
-          width: 51px;
-        }
-      }
-
-      &:nth-child(8) {
-        margin-bottom: 16px;
-
-        .nav-link {
-          width: 78px;
         }
       }
     }
@@ -131,54 +82,21 @@
     }
 
     .nav-list {
-      height: 52px;
-      text-align: center;
-      flex-wrap: nowrap;
+      justify-content: center;
+      padding: 14.5px 16px;
 
       .nav-item {
-        margin-top: 16px;
-        margin-right: 8px;
-        padding: 0;
-        height: 21px;
+        flex: 0;
         border-right: solid 1px;
+        padding: 0 8px;
 
-        .nav-link {
-          margin: 0;
+        &:first-child {
+          padding-left: 0;
         }
 
-        &:nth-child(1) {
-          width: 49px;
-          margin-left: auto;
-        }
-
-        &:nth-child(2) {
-          width: 72px;
-        }
-
-        &:nth-child(3) {
-          width: 63px;
-        }
-
-        &:nth-child(4) {
-          width: 50px;
-        }
-
-        &:nth-child(5) {
-          width: 81px;
-        }
-
-        &:nth-child(6) {
-          width: 45px;
-        }
-
-        &:nth-child(7) {
-          width: 59px;
-        }
-
-        &:nth-child(8) {
-          width: 78px;
-          margin-right: auto;
+        &:last-child {
           border-right: none;
+          padding-right: 0;
         }
       }
     }
