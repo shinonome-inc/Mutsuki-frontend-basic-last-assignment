@@ -8,9 +8,9 @@
   }
 }
 
-.container {
-  .row {
-    .col:nth-child(even) {
+.plans-container {
+  .plans {
+    .plan-outer:nth-child(even) {
       .plan {
         border: solid 5px $orange_bistre;
         box-sizing: border-box;
@@ -25,7 +25,7 @@
     }
 
     @media screen and (min-width: $breakpoint-md) {
-      .col {
+      .plan-outer {
         margin-bottom: 51px;
       }
     }
