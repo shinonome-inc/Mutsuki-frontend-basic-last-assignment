@@ -1,11 +1,11 @@
 @use "../../variables" as *;
 
 .about {
-  .container {
-    .row {
+  .about-container {
+    .about-imgs {
       margin: 0;
 
-      .col {
+      .about-img {
         padding: 0;
       }
     }
