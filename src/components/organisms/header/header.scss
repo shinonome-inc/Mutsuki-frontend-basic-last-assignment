@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 
-.bg {
+.header {
   padding: 0;
   background-color: $black;
 
@@ -10,64 +10,67 @@
     height: 20.56px;
   }
 
-  .navbar-toggler {
+  .navbar-toggler-button {
     outline: none;
     border: none;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='15' height='19' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
   }
 
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='15' height='19' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
-
-  .collapse {
-    .navbar-nav {
-      .nav-item {
+  .navbar-collapse {
+    .nav-item-outer {
+      .header-item {
         .nav-link {
-          padding: 13px 0 13px 16px;
+          font-size: $fontsize-S;
+          padding: 14.5px 0 14.5px 16px;
         }
       }
 
-      .nav-item {
-        text-decoration: none;
+      .concept-outer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
 
-        .concept-outer {
-          display: flex;
-          justify-content: space-between;
-
-          .nav-link {
-            color: $white;
-            font-size: $fontsize-S;
-          }
-
-          .nav-link {
-            font-family: $fontfamily-gothic;
-            padding: 13px 0 13px 16px;
-            font-size: $fontsize-S;
-            transition: ease 0.2s;
-
-            &:hover {
-              background-color: $black;
-            }
-
-            .icon-plus {
-              margin-right: 17px;
-              width: 26px;
-              height: 26px;
-            }
-          }
+        .nav-link {
+          color: $white;
+          font-size: $fontsize-S;
+          padding: 14.5px 0 14.5px 16px;
+          width: 100%;
         }
 
+        .icon-plus-outer {
+          padding: 12px 0 12px 16px;
+          background-color: transparent;
+          border: none;
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          .icon-plus {
+            margin-right: 17px;
+            width: 26px;
+            height: 26px;
+          }
+        }
+      }
+
+      .dropdown-menu-outer {
         .dropdown-menu {
           background-color: $black;
-          border-radius: 0%;
           padding: 0;
-          margin-top: 0;
+          margin: 0;
 
-          .dropdown-item {
+          &::before {
+            border: none;
+          }
+
+          .dropdown-item-link {
             color: $white;
             font-size: $fontsize-S;
             padding: 14.5px 0 14.5px 28px;
-            transition: ease 0.2s;
 
             &:hover {
               background-color: $black;
@@ -80,18 +83,21 @@
 
   @media (min-width: $breakpoint-xl) {
     background-color: $black_50;
-    height: 90px;
 
     .switch-logo {
       width: 140px;
       height: 23.99px;
     }
 
-    .collapse {
-      .navbar-nav {
-        .nav-item {
+    .navbar-collapse {
+      .nav-item-outer {
+        margin-left: auto;
+        margin-right: 30px;
+
+        .header-item {
           .nav-link {
-            padding-left: 40px;
+            padding: 34.5px 20px;
+            margin: 0;
             transition: ease 0.2s;
 
             &:hover {
@@ -100,19 +106,51 @@
           }
         }
 
-        .nav-item {
-          .concept-outer {
-            .nav-link {
-              padding: 13px 0 0 40px;
+        .concept-outer {
+          position: relative;
+
+          .nav-link {
+            padding: 34.5px 20px;
+            margin: 0;
+            transition: ease 0.2s;
+
+            &:hover {
+              color: $gray_nobel;
+            }
+          }
+
+          .icon-plus-outer {
+            padding: 0;
+
+            .icon-plus {
+              display: none;
+            }
+          }
+
+          &:hover ~ .dropdown-menu-outer {
+            display: block;
+          }
+        }
+
+        .dropdown-menu-outer {
+          position: absolute;
+          top: 90px;
+          margin-left: 80px;
+
+          &:hover {
+            display: block;
+          }
+
+          .dropdown-menu {
+            border-radius: 0;
+            width: 220px;
+
+            .dropdown-item-link {
+              padding: 17.5px 0 17.5px 18px;
+              transition: ease 0.2s;
 
               &:hover {
-                background-color: transparent;
-              }
-            }
-
-            .nav-link {
-              .icon-plus {
-                display: none;
+                background-color: $orange_bistre;
               }
             }
           }
