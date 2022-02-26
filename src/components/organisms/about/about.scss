@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+
+.about {
+  .about-container {
+    .about-imgs {
+      margin: 0;
+
+      .about-img {
+        padding: 0;
+      }
+    }
+
+    .message {
+      background-color: $white-smoke;
+
+      .about-message {
+        color: $orange_bistre;
+        font-family: $fontfamily-mincho;
+      }
+    }
+  }
+}
