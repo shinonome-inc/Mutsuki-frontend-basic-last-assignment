@@ -1,0 +1,99 @@
+@use "../../variables" as *;
+
+.organisms-events {
+  margin-bottom: 35px;
+
+  .news-and-events-title {
+    margin-bottom: 42px;
+  }
+
+  .events-info-frame {
+    margin-bottom: 40px;
+
+    .events-info-link {
+      text-decoration: none;
+
+      &:first-child .events-info-outer {
+        border: solid 1px $gray_gainsboro;
+      }
+
+      .events-info-outer {
+        border-bottom: solid 1px $gray_gainsboro;
+        border-left: solid 1px $gray_gainsboro;
+        border-right: solid 1px $gray_gainsboro;
+        background-color: $white;
+        padding: 10px 20px 14px;
+        display: flex;
+        align-items: center;
+
+        .events-img {
+          display: none;
+        }
+
+        .events-article-outer {
+          overflow: hidden;
+
+          .events-article-title {
+            color: $black;
+            font-size: $fontsize-M;
+            margin: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+
+          .events-data {
+            font-size: $fontsize-XS;
+            color: $gray_gainsboro;
+          }
+        }
+      }
+    }
+  }
+
+  .info-more-outer {
+    display: block;
+    text-align: right;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    .events-info-frame {
+      .events-info-link {
+        &:first-child .events-info-outer {
+          border: none;
+
+          .events-article-outer {
+            border-top: solid 1px $gray_gainsboro;
+          }
+        }
+
+        .events-info-outer {
+          padding: 0;
+          border: none;
+
+          &:hover .events-img {
+            transform: scale(1.2);
+          }
+
+          .events-img-outer {
+            overflow: hidden;
+
+            .events-img {
+              display: inline;
+              width: 221px;
+              height: 141px;
+              transition: ease 0.5s;
+            }
+          }
+
+          .events-article-outer {
+            padding: 48px 24px;
+            border-bottom: solid 1px $gray_gainsboro;
+            border-right: solid 1px $gray_gainsboro;
+            width: calc(100% - 220px);
+          }
+        }
+      }
+    }
+  }
+}
