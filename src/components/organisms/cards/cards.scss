@@ -1,38 +1,43 @@
 @use "../../variables" as *;
 
-.card-outer {
-  .card {
+.cards {
+  .card-outer {
     margin-bottom: 40px;
-
-    .card-img {
-      border-radius: 0;
-
-      .card-img-top {
+    .card {
+      .card-img {
         border-radius: 0;
+
+        .card-img-top {
+          border-radius: 0;
+        }
       }
     }
 
     .card-body {
-      padding-top: 32px;
+      padding: 32px 46px;
+      background-color: $white-smoke;
+
+      .card-text {
+        margin-bottom: 30px;
+        line-height: 42px;
+        font-size: $fontsize-S;
+        text-align: center;
+      }
+
+      a.button {
+        margin: auto;
+      }
     }
 
     @media screen and (min-width: $breakpoint-md) {
       margin-bottom: 100px;
-
-      .card-body {
-        height: 570px;
+      .card {
+        &:hover .card-img .card-img-top {
+          transform: scale(1.2);
+        }
       }
-    }
-
-    @media screen and (min-width: $breakpoint-lg) {
       .card-body {
-        height: 400px;
-      }
-    }
-
-    @media screen and (min-width: $breakpoint-xl) {
-      .card-body {
-        height: 360px;
+        padding: 32px 35px;
       }
     }
   }
