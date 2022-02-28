@@ -3,6 +3,7 @@
 .header {
   padding: 0;
   background-color: $black;
+  position: fixed;
 
   .switch-logo {
     margin: 14.72px 0 14.72px 16px;
@@ -133,6 +134,7 @@
         }
 
         .dropdown-menu-outer {
+          display: none;
           position: absolute;
           top: 90px;
           margin-left: 80px;
