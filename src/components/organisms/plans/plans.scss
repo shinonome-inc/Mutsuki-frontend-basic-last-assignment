@@ -8,26 +8,19 @@
   }
 }
 
-.plans-container {
+@media screen and (min-width: $breakpoint-md) {
+  .message {
+    padding-bottom: 32px;
+  }
+
   .plans {
-    .plan-outer:nth-child(even) {
-      .plan {
-        border: solid 5px $orange_bistre;
-        box-sizing: border-box;
+    display: flex;
+    gap: 0 30px;
+    margin-bottom: 40px;
+    align-items: flex-start;
 
-        .plan-text {
-          background-color: $orange_bistre;
-          padding-top: 15px;
-          margin: 0;
-          height: 60px;
-        }
-      }
-    }
-
-    @media screen and (min-width: $breakpoint-md) {
-      .plan-outer {
-        margin-bottom: 51px;
-      }
+    .plan {
+      width: 100%;
     }
   }
 }
