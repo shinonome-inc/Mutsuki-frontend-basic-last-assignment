@@ -6,9 +6,8 @@
   position: fixed;
 
   .switch-logo {
-    margin: 14.72px 0 14.72px 16px;
+    margin: 15px 0 15px 16px;
     width: 120px;
-    height: 20.56px;
   }
 
   .navbar-toggler-button {
@@ -25,7 +24,7 @@
       .header-item {
         .nav-link {
           font-size: $fontsize-S;
-          padding: 14.5px 0 14.5px 16px;
+          padding: 14px 0 14px 16px;
         }
       }
 
@@ -37,7 +36,7 @@
         .nav-link {
           color: $white;
           font-size: $fontsize-S;
-          padding: 14.5px 0 14.5px 16px;
+          padding: 14px 0 14px 16px;
           width: 100%;
         }
 
@@ -71,7 +70,7 @@
           .dropdown-item-link {
             color: $white;
             font-size: $fontsize-S;
-            padding: 14.5px 0 14.5px 28px;
+            padding: 14px 0 14px 28px;
 
             &:hover {
               background-color: $black;
@@ -87,7 +86,6 @@
 
     .switch-logo {
       width: 140px;
-      height: 23.99px;
     }
 
     .navbar-collapse {
@@ -97,7 +95,7 @@
 
         .header-item {
           .nav-link {
-            padding: 34.5px 20px;
+            padding: 34px 20px;
             margin: 0;
             transition: ease 0.2s;
 
@@ -111,7 +109,7 @@
           position: relative;
 
           .nav-link {
-            padding: 34.5px 20px;
+            padding: 34px 20px;
             margin: 0;
             transition: ease 0.2s;
 
@@ -136,7 +134,7 @@
         .dropdown-menu-outer {
           display: none;
           position: absolute;
-          top: 90px;
+          top: 89px;
           margin-left: 80px;
 
           &:hover {
@@ -148,7 +146,7 @@
             width: 220px;
 
             .dropdown-item-link {
-              padding: 17.5px 0 17.5px 18px;
+              padding: 17px 0 17px 18px;
               transition: ease 0.2s;
 
               &:hover {
