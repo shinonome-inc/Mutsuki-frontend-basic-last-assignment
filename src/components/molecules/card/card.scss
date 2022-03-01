@@ -2,27 +2,38 @@
 
 .card {
   border: none;
-  position: relative;
+  margin-bottom: 40px;
 
-  .card-title {
-    position: absolute;
-    left: 6px;
-    z-index: 3;
-    color: $orange_bistre;
-    font-size: $fontsize-L;
-    margin: 0;
-  }
+  .card-link {
+    .card-title {
+      z-index: 3;
+      position: absolute;
+      color: $orange_bistre;
+      font-size: $fontsize-L;
+      margin: 0;
+      margin-left: 4px;
+    }
 
-  &::before {
-    z-index: 2;
-    content: "";
-    position: absolute;
-    border-bottom: solid 150px transparent;
-    border-left: solid 150px $white;
+    .card-img {
+      position: relative;
+
+      &::before {
+        z-index: 2;
+        content: "";
+        position: absolute;
+        border-bottom: solid 150px transparent;
+        border-left: solid 150px $white;
+      }
+
+      .card-img-top {
+        z-index: 1;
+        border-radius: 0;
+      }
+    }
   }
 
   .card-body {
-    padding: 0 35px 32px;
+    padding: 32px 46px;
     background-color: $white-smoke;
 
     .card-text {
@@ -40,20 +51,24 @@
   }
 
   @media screen and (min-width: $breakpoint-md) {
-    &:hover .card-img-top {
-      transform: scale(1.2);
-    }
+    margin-bottom: 100px;
 
-    .card-img {
+    .card-link {
       overflow: hidden;
 
-      .card-img-top {
-        transition: ease 0.5s;
+      &:hover .card-img .card-img-top {
+        transform: scale(1.2);
+      }
+
+      .card-img {
+        .card-img-top {
+          transition: ease 0.5s;
+        }
       }
     }
 
     .card-body {
-      padding: 32px 46px;
+      padding: 32px 35px;
     }
   }
 }
