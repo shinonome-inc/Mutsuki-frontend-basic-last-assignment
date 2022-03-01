@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.message {
+  padding-top: 0;
+
+  .message-title {
+    color: $orange_bistre;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .message {
+    padding-bottom: 32px;
+  }
+
+  .plans {
+    display: flex;
+    gap: 0 30px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+
+    .plan {
+      width: 100%;
+    }
+  }
+}
+
+.button {
+  margin: 0 auto;
+}
