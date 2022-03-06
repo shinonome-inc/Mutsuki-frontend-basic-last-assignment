@@ -1,6 +1,8 @@
 @use "../../variables" as *;
 
-.row-news-and-events {
-  background-color: $white-smoke;
-  padding: 56px 0;
+.news-and-events {
+  .row-news-and-events {
+    background-color: $white-smoke;
+    padding: 56px 45px;
+  }
 }
