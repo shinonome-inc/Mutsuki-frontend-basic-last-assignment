@@ -2,9 +2,12 @@
 
 .news-and-events {
   background-color: $white_smoke;
-  padding: 0 55px;
 
-  .row-news-and-events {
-    padding: 56px 0;
+  .container-news-and-events {
+    padding: 0 55px;
+
+    .row-news-and-events {
+      padding: 56px 0;
+    }
   }
 }
