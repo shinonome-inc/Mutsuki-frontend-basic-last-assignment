@@ -1,0 +1,13 @@
+@use "../../variables" as *;
+
+.news-and-events {
+  background-color: $white_smoke;
+
+  .container-news-and-events {
+    padding: 0 55px;
+
+    .row-news-and-events {
+      padding: 56px 0;
+    }
+  }
+}
