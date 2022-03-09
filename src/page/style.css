@@ -225,6 +225,9 @@ a.button:hover {
     margin: 0;
   }
 }
+.about {
+  margin-bottom: 40px;
+}
 .about .about-container .about-imgs {
   margin: 0;
 }
@@ -675,20 +678,11 @@ a.button:hover {
 .button {
   margin: 0 auto;
 }
-.news-and-events {
-  background-color: #f5f5f5;
-}
-.news-and-events .container-news-and-events {
-  padding: 0 55px;
-}
-.news-and-events .container-news-and-events .row-news-and-events {
-  padding: 56px 0;
-}
 .top {
   margin-bottom: 40px;
 }
 .top .top-title-outer {
-  background-image: url(../components/organisms/top/top-image.png);
+  background-image: url(top-image.png);
   height: 360px;
   position: relative;
   background-position: center;
@@ -714,6 +708,8 @@ a.button:hover {
 .top .message .message-title {
   font-size: 20px;
   font-family: "Noto Serif JP", serif;
+  color: #fff;
+  padding-top: 34px;
 }
 @media (min-width: 992px) {
   .top .top-title-outer {
@@ -725,4 +721,13 @@ a.button:hover {
   .top .message .message-title {
     font-size: 36px;
   }
+}
+.news-and-events {
+  background-color: #f5f5f5;
+}
+.news-and-events .container-news-and-events {
+  padding: 0 55px;
+}
+.news-and-events .container-news-and-events .row-news-and-events {
+  padding: 56px 0;
 }
