@@ -683,7 +683,7 @@ a.button:hover {
   margin-bottom: 40px;
 }
 .top .top-title-outer {
-  background-image: url(../img/top-image.png);
+  background-image: url(https://github.com/shinonome-inc/Mutsuki-frontend-basic-last-assignment/blob/complete-page/src/img/top-image.png?raw=true);
   height: 360px;
   position: relative;
   background-position: center;
