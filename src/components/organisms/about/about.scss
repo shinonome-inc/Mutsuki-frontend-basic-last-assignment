@@ -1,6 +1,8 @@
 @use "../../variables" as *;
 
 .about {
+  margin-bottom: 40px;
+
   .about-container {
     .about-imgs {
       margin: 0;
@@ -16,6 +18,7 @@
       .about-message {
         color: $orange_bistre;
         font-family: $fontfamily-mincho;
+        padding-top: 31px;
       }
     }
   }
